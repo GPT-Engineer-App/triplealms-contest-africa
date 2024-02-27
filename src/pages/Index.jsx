@@ -1,4 +1,5 @@
-import { Box, Button, Container, Flex, Heading, Link, Stack, Text, VStack, Image, FormControl, FormLabel, Input, FormHelperText, List, ListItem, ListIcon, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, Stack, Text, VStack, FormControl, FormLabel, Input, FormHelperText, List, ListItem, ListIcon, useColorModeValue } from "@chakra-ui/react";
+import NavBar from "../components/NavBar";
 import { FaTrophy, FaUserPlus, FaRegListAlt } from "react-icons/fa";
 
 const Index = () => {
@@ -8,7 +9,7 @@ const Index = () => {
   return (
     <Container maxW="container.xl" p={0}>
       <Box bg={bgColor} color={textColor} minHeight="100vh">
-        <Flex direction="column" alignItems="center" justifyContent="center" py={10}>
+        <Flex direction="column" alignItems="center" justifyContent="center" py={10} pt={20}>
           <VStack spacing={8} alignItems="center" w="full">
             <Heading as="h1" size="2xl" color="black">
               TripleAlms Africa
@@ -53,15 +54,8 @@ const Index = () => {
             </List>
           </Box>
 
-          <Box as="footer" w="100%" mt={20}>
-            <Flex justifyContent="space-between">
-              <Link color="teal.500">Home</Link>
-              <Link color="teal.500">Contest</Link>
-              <Link color="teal.500">Privacy Policy</Link>
-              <Link color="teal.500">Rules and Regulations</Link>
-              <Link color="teal.500">Terms and Conditions</Link>
-            </Flex>
-          </Box>
+          {/* Navigation Bar is now at the top of the page */}
+          <NavBar />
         </Flex>
       </Box>
     </Container>
