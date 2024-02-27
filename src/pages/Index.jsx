@@ -9,7 +9,7 @@ const Index = () => {
     <Container maxW="container.xl" p={0}>
       <Box bg={bgColor} color={textColor} minHeight="100vh">
         <Flex direction="column" alignItems="center" justifyContent="center" py={10}>
-          <VStack spacing={8} alignItems="flex-start">
+          <VStack spacing={8} alignItems="center" w="full">
             <Heading as="h1" size="2xl" color="black">
               TripleAlms Africa
             </Heading>
